@@ -6,7 +6,6 @@ function goProfile() {
    document.location = "profile.html?id=" + tg.initDataUnsafe.user.id + "&name=" + tg.initDataUnsafe.user.first_name;
 }
 
-
 function getId() {
    var query = window.location.href.split("?")[1]
    var params = query.split("&");  
@@ -17,6 +16,11 @@ function getId() {
    const profile = document.getElementById('profile');
    const newName = document.createElement('div');
 
+   newName.innerHTML =  
+   `
+   <span class="casino-form-title">Профиль ${params[1].split("=")[1]}</span>
+   `;
+
    newCard.innerHTML =  
    `
    <div class="wrap-menu">
@@ -25,11 +29,6 @@ function getId() {
    </div>
    `;
 
-   newName.innerHTML =  
-   `
-   <span class="casino-form-title">Профиль ${params[1].split("=")[1]}</span>
-   `;
-
-   profile.appendChild(newCard);
-   name.appendChild(newName);
+   profile.appendChild(newName);
+   card.appendChild(newCard);
 }
