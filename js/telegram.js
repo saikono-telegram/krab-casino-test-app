@@ -8,7 +8,7 @@ function goProfile() {
 
 
 function getId() {
-	var query = window.location.href.split("?")[1]
+   var query = window.location.href.split("?")[1]
    var params = query.split("&");  
 
    const card = document.getElementById('user');
