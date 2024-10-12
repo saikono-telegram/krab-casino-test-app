@@ -1,8 +1,8 @@
-window.Telegram.WebApp.ready();
-const tg = window.Telegram.WebApp;
+let tg = window.Telegram.WebApp; 
 
-alert(tg);
+tg.expand(); 
 
+alert(tg.initDataUnsafe.user);
 //const card = document.getElementById('user');
 
 //const newCard = document.createElement('div');
