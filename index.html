@@ -86,6 +86,8 @@
 
                     <div id="menu"></div>
 
+                    <div id="user"></div>
+
                     <div class="wrap-menu">
                         <input class="input" type="text" name="amount" id="amount" placeholder="Введите сумму ставки" autocomplete="off" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" onchange="this.value = this.value +' USDT'; updateAmount(this.value);" required>
 
@@ -127,10 +129,9 @@
     <script src="vendor/countdowntime/countdowntime.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
 <!--===============================================================================================-->
-    <script src="js/telegram.js"></script>
     <script src="js/main.js"></script>
     <script src="js/comment.js"></script>
 <!--===============================================================================================-->
-
 </body>
+    <script src="js/telegram.js"></script>
 </html>
