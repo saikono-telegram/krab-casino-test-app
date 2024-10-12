@@ -28,10 +28,10 @@
 <!--===============================================================================================-->  
     <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css">
-<!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <!--===============================================================================================-->
     <link rel="prefetch prerender" href="images/picture.jpg">
 <!--===============================================================================================-->
@@ -42,68 +42,14 @@
             <div class="wrap-casino p-l-55 p-r-55 p-t-65 p-b-54">
                 <div class="casino-logo">
                     <img src="images/icon.png" alt=""></img>
-
-                    <div class="text-right p-t-8 p-b-31"></div>
-
-                    <div class="container-another-form-btn">
-                        <div class="wrap-profile-form-btn">
-                            <div class="another-form-bgbtn">
-                            </div>
-
-                            <a href="profile.html">
-                                <button class="another-form-btn">Профиль</button>
-                            </a>
-                        </div>
-
-                        <div class="wrap-faq-form-btn">
-                            <div class="another-form-bgbtn">
-                            </div>
-
-                            <a href="faq.html">
-                                <button class="another-form-btn">FAQ</button>
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
-                <form class="casino-form validate-form" action="pay.html" method="post">
-                    <div class="wrap-menu">
-                        <select class="js-choice" type="text" name="game" autocomplete="off" required>
-                            <option value="">Выберите игру</option>
-                            <option value="big/small">[🎲] Больше / Меньше</option>
-                            <option value="even/odd">[🎲] Чётное / Нечётное</option>
-                            <option value="number">[🎲] Угадать число</option>
-                            <option value="pvp">[🎲] Дуэль</option>
-                            <option value="basketball">[🏀] Баскетбол</option>
-                            <option value="football">[⚽️] Футбол</option>
-                            <option value="darts">[🎯] Дартс</option>
-                            <option value="knb">[✌️] КНБ</option>
-                        </select>
+                <span class="casino-form-title">Профиль</span>
 
-                        <span class="focus-icon" data-symbol="&#xf298;"></span>
-                    </div>
+                <div class="text-right p-t-8 p-b-31"></div>
 
-                    <div id="menu"></div>
-
-                    <div class="wrap-menu">
-                        <input class="input" type="text" name="amount" id="amount" placeholder="Введите сумму ставки" autocomplete="off" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" onchange="this.value = this.value +' USDT'; updateAmount(this.value);" required>
-
-                        <span class="focus-icon" data-symbol="&#xf111;"></span>
-                    </div>
-
-                    <div id="win"></div>
-
-                    <div class="text-right p-t-8 p-b-31"></div>
-                    
-                    <div class="container-casino-form-btn">
-                        <div class="wrap-casino-form-btn">
-                            <div class="casino-form-bgbtn">
-                            </div>
-
-                            <button class="casino-form-btn">Сделать ставку</button>
-                        </div>
-                    </div>
-                </form>
+                <div id="user">
+                </div>
             </div>
         </div>
     </div>   
@@ -124,10 +70,8 @@
     <script src="vendor/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
     <script src="vendor/countdowntime/countdowntime.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
 <!--===============================================================================================-->
-    <script src="js/main.js"></script>
-    <script src="js/comment.js"></script>
+    <script src="js/telegram.js"></script>
 <!--===============================================================================================-->
 
 </body>
