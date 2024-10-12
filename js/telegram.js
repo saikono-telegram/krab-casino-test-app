@@ -9,7 +9,7 @@ const newCard = document.createElement('div');
 newCard.innerHTML =  
 `
 <div class="wrap-menu">
-    <span class="label-casino">Ваш Telegram ID: #${tg.WebAppUser}</span>
+    <span class="label-casino">Ваш Telegram ID: #${tg.initDataUnsafe.user.id}</span>
     <span class="focus-icon" data-symbol="&#xf207;"></span>     
 </div>
 `;
