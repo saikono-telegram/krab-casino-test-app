@@ -2,7 +2,7 @@ let tg = window.Telegram.WebApp;
 
 tg.expand(); 
 
-alert(tg.initDataUnsafe.user); //1
+alert(tg.initDataUnsafe.user.id);
 //const card = document.getElementById('user');
 
 //const newCard = document.createElement('div');
