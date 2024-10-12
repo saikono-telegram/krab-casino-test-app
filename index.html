@@ -1,0 +1,135 @@
+<!DOCTYPE HTML5>
+<html lang="en">
+<head>
+    <title>KRAB Casino</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <link rel="canonical" href="index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta http-equiv="Cache-Control" content="no-cache">
+<!--===============================================================================================-->  
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+    <link rel="prefetch prerender" href="images/picture.jpg">
+<!--===============================================================================================-->
+</head>
+<body>
+    <div class="limiter">
+        <div class="container-casino" id="banner">
+            <div class="wrap-casino p-l-55 p-r-55 p-t-65 p-b-54">
+                <div class="casino-logo">
+                    <img src="images/icon.png" alt=""></img>
+
+                    <div class="text-right p-t-8 p-b-31"></div>
+
+                    <div class="container-another-form-btn">
+                        <div class="wrap-profile-form-btn">
+                            <div class="another-form-bgbtn">
+                            </div>
+
+                            <a href="profile.html">
+                                <button class="another-form-btn">Профиль</button>
+                            </a>
+                        </div>
+
+                        <div class="wrap-faq-form-btn">
+                            <div class="another-form-bgbtn">
+                            </div>
+
+                            <a href="faq.html">
+                                <button class="another-form-btn">FAQ</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="casino-form validate-form" action="pay.html" method="post">
+                    <div class="wrap-menu">
+                        <select class="js-choice" type="text" name="game" autocomplete="off" required>
+                            <option value="">Выберите игру</option>
+                            <option value="big/small">[🎲] Больше / Меньше</option>
+                            <option value="even/odd">[🎲] Чётное / Нечётное</option>
+                            <option value="number">[🎲] Угадать число</option>
+                            <option value="pvp">[🎲] Дуэль</option>
+                            <option value="basketball">[🏀] Баскетбол</option>
+                            <option value="football">[⚽️] Футбол</option>
+                            <option value="darts">[🎯] Дартс</option>
+                            <option value="knb">[✌️] КНБ</option>
+                        </select>
+
+                        <span class="focus-icon" data-symbol="&#xf298;"></span>
+                    </div>
+
+                    <div id="menu"></div>
+
+                    <div class="wrap-menu">
+                        <input class="input" type="text" name="amount" id="amount" placeholder="Введите сумму ставки" autocomplete="off" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" onchange="this.value = this.value +' USDT'; updateAmount(this.value);" required>
+
+                        <span class="focus-icon" data-symbol="&#xf111;"></span>
+                    </div>
+
+                    <div id="win"></div>
+
+                    <div class="text-right p-t-8 p-b-31"></div>
+                    
+                    <div class="container-casino-form-btn">
+                        <div class="wrap-casino-form-btn">
+                            <div class="casino-form-bgbtn">
+                            </div>
+
+                            <button class="casino-form-btn">Сделать ставку</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>   
+      
+<!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!--<script src="js/script.js"></script>-->
+<!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/comment.js"></script>
+<!--===============================================================================================-->
+
+</body>
+</html>
