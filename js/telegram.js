@@ -9,21 +9,21 @@ function goProfile() {
 
 function getId() {
 	var query = window.location.href.split("?")[1]
-    var params = query.split("&");  
+   var params = query.split("&");  
 
-    const card = document.getElementById('user');
+   const card = document.getElementById('user');
 
-    const newCard = document.createElement('div');
+   const newCard = document.createElement('div');
 
-    newCard.innerHTML =  
-    `
-    <div class="wrap-menu">
-       <span class="label-casino">Ваш Telegram ID: #${params[0].split("=")[1]}</span>
-       <span class="focus-icon" data-symbol="&#xf207;"></span>    
-       <span class="label-casino">URL: #${params[1].split("=")[1]}</span>
-       <span class="focus-icon" data-symbol="&#xf207;"></span>   
-    </div>
-    `;
+   newCard.innerHTML =  
+   `
+   <div class="wrap-menu">
+      <span class="label-casino">Ваш Telegram ID: #${params[0].split("=")[1]}</span>
+      <span class="focus-icon" data-symbol="&#xf207;"></span>    
+      <span class="label-casino">URL: #${params[1].split("=")[1]}</span>
+      <span class="focus-icon" data-symbol="&#xf207;"></span>   
+   </div>
+   `;
 
-    card.appendChild(newCard);
+   card.appendChild(newCard);
 }
