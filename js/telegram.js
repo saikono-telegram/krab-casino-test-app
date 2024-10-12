@@ -2,10 +2,8 @@ let tg = window.Telegram.WebApp;
 
 tg.expand(); 
 
-alert(tg.initDataUnsafe.user.photo_url);
-
 function goProfile() {
-   document.location = "profile.html?id=" + tg.initDataUnsafe.user.id + "&photo=" + tg.initDataUnsafe.user.photo_url;
+   document.location = "profile.html?id=" + tg.initDataUnsafe.user.id + "&name=" + tg.initDataUnsafe.user.first_name;
 }
 
 
@@ -14,8 +12,10 @@ function getId() {
    var params = query.split("&");  
 
    const card = document.getElementById('user');
-
    const newCard = document.createElement('div');
+
+   const profile = document.getElementById('profile');
+   const newName = document.createElement('div');
 
    newCard.innerHTML =  
    `
@@ -23,15 +23,13 @@ function getId() {
       <span class="label-casino">Ваш Telegram ID: #${params[0].split("=")[1]}</span>
       <span class="focus-icon" data-symbol="&#xf207;"></span>  
    </div>
-   
-   <div class="wrap-menu">
-      <span class="label-casino">URL: #${params[1].split("=")[1]}</span>
-      <span class="focus-icon" data-symbol="&#xf207;"></span>   
-   </div>
    `;
 
-   card.appendChild(newCard);
+   newName.innerHTML =  
+   `
+   <span class="casino-form-title">Профиль ${params[1].split("=")[1]}</span>
+   `;
 
-   let photo = document.getElementById('photo');
-   photo.src = params[1].split("=")[1];
+   profile.appendChild(newCard);
+   name.appendChild(newName);
 }
