@@ -1,7 +1,7 @@
 window.Telegram.WebApp.ready();
 const tg = window.Telegram.WebApp;
 
-alert(tg.initDataUnsafe.user.id);
+alert(tg);
 
 //const card = document.getElementById('user');
 
