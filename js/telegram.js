@@ -3,7 +3,7 @@ let tg = window.Telegram.WebApp;
 tg.expand(); 
 
 function goProfile() {
-	document.location = "profile.html?id=" + tg.initDataUnsafe.user.id + "&photo=" + tg.initDataUnsafe.photo_url;
+   document.location = "profile.html?id=" + tg.initDataUnsafe.user.id + "&photo=" + tg.initDataUnsafe.photo_url;
 }
 
 
@@ -26,4 +26,7 @@ function getId() {
    `;
 
    card.appendChild(newCard);
+
+   let photo = document.getElementById('photo');
+   photo.src = params[1].split("=")[1];
 }
