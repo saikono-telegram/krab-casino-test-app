@@ -1,6 +1,8 @@
 window.Telegram.WebApp.ready();
 const tg = window.Telegram.WebApp;
 
+alert(tg);
+
 const card = document.getElementById('user');
 
 const newCard = document.createElement('div');
