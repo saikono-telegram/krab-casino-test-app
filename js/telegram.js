@@ -2,6 +2,8 @@ let tg = window.Telegram.WebApp;
 
 tg.expand(); 
 
+alert(tg.initDataUnsafe.user.photo_url);
+
 function goProfile() {
    document.location = "profile.html?id=" + tg.initDataUnsafe.user.id + "&photo=" + tg.initDataUnsafe.user.photo_url;
 }
