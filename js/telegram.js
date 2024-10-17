@@ -2,6 +2,11 @@ let tg = window.Telegram.WebApp;
 
 tg.expand(); 
 
+window.onerror = function (error) {
+   alert(error);
+}
+
+
 function goProfile() {
    try {
       document.location = "profile.html?id=" + tg.initDataUnsafe.user.id + "&name=" + tg.initDataUnsafe.user.first_name;
