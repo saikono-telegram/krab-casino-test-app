@@ -2,8 +2,8 @@ let tg = window.Telegram.WebApp;
 
 tg.expand(); 
 
-window.onerror = function (error) {
-   alert(error);
+window.onerror = function (error, source, lineno, colno, error) {
+   alert(error + "\n" + source + "\n" + lineno + "\n" + colno + "\n" + error);
 }
 
 
