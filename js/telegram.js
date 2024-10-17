@@ -24,7 +24,7 @@ function goMenu() {
 }
 
 function getUser(user_id) {
-   return fetch(' https://147.45.231.30:1212/api/user?user_id=' + user_id)
+   return fetch('https://147.45.231.30:1212/api/user?user_id=' + user_id)
       .then(data => data.json())
       .then(response => {
          return response
